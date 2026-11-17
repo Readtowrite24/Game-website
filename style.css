@@ -3,15 +3,53 @@ background-color: #222;
 font-family: system-ui,sans-serif;
 color: #808080;
 line-height: 1.6;
+text-align:center;
 }
 
+ul {
+  width: fit-content;      
+  margin: 0 auto;          
+  text-align: left;        
+}
+H1{
+text-align: center;
+color:#39FF14;
+}
 a{color: #39FF14;
 }
 a:hover {
 color: #008080;
 }
-.categories{
-line-width: 200px;
-color:#39FF14
 
+.categories{
+	text-align: center;
+}
+.categories ul {
+  width: fit-content;   
+  margin: 0 auto;       
+  text-align: left;     
+  color:#39FF14 ;
+}
+
+.winners{
+text-align: center;
+}
+.winners ul{
+width: fit-content;   
+margin: 0 auto;       
+text-align: left;     
+color:#39FF14 ;
+} 
+
+
+
+.links{
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 2rem;
+}
+.links li {
+  list-style: none;
 }
