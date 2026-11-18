@@ -1,0 +1,16 @@
+ Game of the Year Awards
+
+Dit is een website over de Game of the Year Awards De site is bedoeld voor gamers die willen zien welke games per categorie (FPS, RPG, Soulslike en RTS) hebben gewonnen, en die zelf op hun favoriet willen stemmen. Je bekijkt de site op https://readtowrite24.github.io/Game-website/
+
+ Wat zit erin
+- Winnaars per categorie:** overzicht van de beste game per genre.
+- Stemmen: met de stemknop kun je per game stemmen. De teller telt direct op (JavaScript).
+- Mobielvriendelijk: de pagina werkt ook op een telefoonscherm van 360 pixels breed.
+- Bootstrap-versie: bootstrap.html` is dezelfde pagina met Bootstrap, om eigen CSS en een framework te   vergelijken.
+
+ Bestanden
+- index.html: de website
+- bootstrap.html: dezelfde website met Bootstrap
+- style.css: de opmaak
+- scriptz.js: de stemknoppen
+- AI-logboek.md: hoe ik AI heb ingezet tijdens het bouwen

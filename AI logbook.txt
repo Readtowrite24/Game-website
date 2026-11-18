@@ -1,0 +1,33 @@
+AI-logboek
+
+Per vermelding: waarvoor ik AI inzette, wat ik vroeg, wat ik met het antwoord deed, en waar ik bijstuurde of iets verwierp.
+
+1. Bootstrap werkte niet
+- Waarvoor: na het koppelen van Bootstrap zag ik geen verschil.
+- Gevraagd: waarom Bootstrap niets deed.
+- Gedaan: in mijn href stond een npm-commando (npm i bootstrap@6.0.0-alpha.1) in plaats van een link, en mijn head en body stonden in de verkeerde volgorde. Vervangen door de officiële CDN-link.
+- Bijgestuurd: de link zelf gecontroleerd op getbootstrap.com en gekozen voor de stabiele versie 5 in plaats van de alpha-versie.
+
+2. Stemknop met teller per game
+- Waarvoor: mijn game-website had nog geen JavaScript-interactiviteit.
+- Gevraagd: een stemknop met teller voor elke game in mijn winnaarslijst.
+- Gedaan: code gebruikt met querySelectorAll, forEach, closest en Number(). Elke regel leren uitleggen, vooral waarom Number() nodig is (anders wordt "0" + 1 gelijk aan "01").
+- Bijgestuurd: de voorbeeldcode zocht naar .kaart, maar mijn knoppen staan in een lijst. Aangepast naar .stem-item.
+
+3. Code laten beoordelen
+- Waarvoor: controleren of mijn website aan de opleverchecklist voldoet.
+- Gevraagd: een beoordeling van mijn HTML, CSS en JavaScript.
+- Gedaan: AI vond fouten: de link naar mijn CSS stond buiten de head, mijn h1 stond in de head, de viewport-regel ontbrak, er stonden li's zonder ul, de alt-tekst was leeg en er waren dubbele CSS-regels. De verbeteringen zelf verwerkt en de alt-tekst zelf ingevuld.
+- Bijgestuurd: na het verwerken stonden mijn menulinks onder elkaar. Zelf ontdekt dat de klasse op de ul moest staan in plaats van op de nav, omdat flexbox alleen directe kinderen naast elkaar zet.
+
+4. Oplossing die niet werkte
+- Waarvoor: een kaartje op mijn oefenpagina leek rechts afgesneden.
+- Gevraagd: hoe ik dat oplos.
+- Gedaan: AI stelde box-sizing: border-box voor. Getest: het veranderde niets.
+- Bijgestuurd: AI had een oorzaak gegokt zonder mijn CSS te zien. Geleerd: een AI-oplossing altijd eerst zelf testen en mijn eigen code meesturen, zodat het antwoord bij mijn situatie past.
+
+5. Bootstrap overschreef mijn stijl
+- Waarvoor: in bootstrap.html waren mijn donkere achtergrond, groene titel en groene links verdwenen, maar mijn stemknoppen waren nog wel groen.
+- Gevraagd: waarom een deel van mijn CSS wel werkte en een deel niet.
+- Gedaan: mijn style.css stond vóór Bootstrap. Bij gelijke regels (zoals body, h1 en a) wint wat het laatst komt. Mijn klasse-regels bleven werken, omdat een klasse specifieker is dan een element. Volgorde omgedraaid: eerst Bootstrap, dan mijn eigen CSS.
+- Bijgestuurd: zelf getest dat alles na het omdraaien weer klopte.
