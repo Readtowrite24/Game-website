@@ -5,11 +5,17 @@ color: #808080;
 line-height: 1.6;
 text-align:center;
 }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}
 
 ul {
   width: fit-content;      
   margin: 0 auto;          
-  text-align: left;        
+  text-align: left; 
+         
 }
 H1{
 text-align: center;
@@ -41,15 +47,52 @@ text-align: left;
 color:#39FF14 ;
 } 
 
+.stem-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
 
 
+.stem-item .stem-knop {
+  margin-left: 1rem;
+  border-radius: 5px;
+  border-color: #39FF14;
+  cursor:pointer;
+  background-color: #39FF14;
+}
+.stem-item .aantal {
+ margin-left: auto;
+  min-width: 2ch;
+  text-align: right;
+}
+ 
+.stem-item {
+  max-width: 450px;
+}
 .links{
 text-align: center;
 display: flex;
 flex-direction: row;
 justify-content: center;
 gap: 2rem;
+width: auto;
+max-width: 100%;
 }
 .links li {
   list-style: none;
+  cursor:pointer;
+}
+.links li:hover {
+  background-color: #39FF14;
+  border-radius: 5px;
+  
+}
+.img{
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  
 }
